@@ -7,6 +7,7 @@ class MyTextfield extends StatelessWidget {
       required this.obscureText,
       required this.myController});
 
+  // ignore: prefer_typing_uninitialized_variables
   final myController;
   final String myhinttext;
   final bool obscureText;

@@ -14,6 +14,9 @@ class Splashscreen extends StatefulWidget {
 
 class _SplashscreenState extends State<Splashscreen> {
   @override
+
+  //initialising the splash screen with a 3s delay
+
   void initState() {
     super.initState();
     // Set a timer to navigate after 3 seconds
@@ -24,6 +27,7 @@ class _SplashscreenState extends State<Splashscreen> {
     });
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xff008efe),

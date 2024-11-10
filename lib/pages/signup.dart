@@ -6,6 +6,10 @@ class Signup extends StatelessWidget {
   Signup({super.key});
 
   final nameController = TextEditingController();
+  final emailController = TextEditingController();
+  final genderController = TextEditingController();
+  final passwordController = TextEditingController();
+  final confirmPpasswordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +45,7 @@ class Signup extends StatelessWidget {
             MyTextfield(
                 myhinttext: "Email",
                 obscureText: false,
-                myController: nameController),
+                myController: emailController),
             //gender textfield
             const SizedBox(
               height: 15,
@@ -49,7 +53,7 @@ class Signup extends StatelessWidget {
             MyTextfield(
                 myhinttext: "Gender",
                 obscureText: false,
-                myController: nameController),
+                myController: genderController),
             //password textfield
             const SizedBox(
               height: 15,
@@ -57,7 +61,7 @@ class Signup extends StatelessWidget {
             MyTextfield(
                 myhinttext: "Password",
                 obscureText: true,
-                myController: nameController),
+                myController: passwordController),
             // confirm password textfield
             const SizedBox(
               height: 15,
@@ -65,7 +69,7 @@ class Signup extends StatelessWidget {
             MyTextfield(
                 myhinttext: "Confirm Password",
                 obscureText: true,
-                myController: nameController),
+                myController: confirmPpasswordController),
 
             // sign up button
             const SizedBox(
